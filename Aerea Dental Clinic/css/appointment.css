@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.appointment-page {
+    display: flex;
+}
+
+
+/* DRAWER */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+    height: 100vh;
+}
+
+.active-tile {
+    filter: invert(50%) sepia(20%) saturate(691%) hue-rotate(117deg) brightness(96%) contrast(87%);
+}
+
+
+.drawer {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.sign-out {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #538D81;
+}
+
+/* MAIN BODY */
+
+.main {
+    background-color: #EEF9FC;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #2A5E4E;
+    font-size: 30px;
+}
+
+.main .button {
+    background-color: #59A48D;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    color: white;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.main .button:hover {
+    background-color: #2A5E4E;
+}
+
+/* CALENDAR */
+
+.calendar {
+    height: 100%;
+    margin-top: 24px;
+    padding: 30px; 
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0 lightgrey;
+    background-color: white;
+}
+
+.calendar header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.calendar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.calendar ul li {
+    width: calc(100% / 7);
+    margin-top: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+#prev, #next {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer; 
+}
+
+#prev::before, #next::before {
+    content: "";
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-width: 0.15em 0.15em 0 0;
+    border-color: #3D3D3D;
+    position: absolute;
+}
+
+#next::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#prev::before {
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+#prev:hover::before,
+#next:hover::before {
+    border-color: #3D3D3D;
+}
+
+.days {
+    font-weight: 600;
+    color: #B5BEC6;
+}
+
+.dates li.today {
+    color: white;
+
+}
+
+.dates li.today::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #61B6A5;
+    padding: 0 12px;
+    z-index: -1;
+}
+
+
+.days li.inactive {
+    color: #ccc;
+}

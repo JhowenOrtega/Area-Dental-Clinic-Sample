@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+
+body {
+    background-color: #EEF9FC;
+}
+
+
+.book-form {
+    margin: 2% 20%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #2A5E4E;
+    margin: 0 0 0 50px;
+}
+
+
+.main {
+    margin: auto;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 2px 2px 5px lightgrey;
+}
+
+
+
+h4 {
+    font-size: 16px;
+    color: #3D3D3D;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-row {
+    width: 100%;
+    margin-right: 60px;
+}
+
+
+.textfield {
+    width: 100%;
+    border: none;
+    background-color: #F3F3F3;
+    padding: 10px 12px;
+    margin-top: 4px;
+    border-radius: 4px;
+}
+
+.btn-secondary {
+    background-color: #F3F3F3;
+    border: none;
+    padding: 10px 12px;
+    margin-top: 4px;
+    color: black;
+}
+
+button {
+    background-color: #59A48D;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2A5E4E;
+}
+
+
+/* EDIT APPOINTMENT */
+.main {
+    height: 100vh;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.actions > button {
+    background-color: #6FCDBA;
+}
+
+
