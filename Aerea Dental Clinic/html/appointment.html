@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookappoinment</title>
+    <link rel="stylesheet" href="../css/appointment.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+</head>
+<body>
+    <section class="appointment-page">
+        <section>
+            <div class="sidebar">
+                
+                <div class="logo">
+                    <img src="../assets/images/clinic_logo.png" alt="">
+                </div>
+
+                <div class="drawer">
+                    <a href="./dashboard.html">
+                        <div class="option">
+                            <img src="../assets/images/dash.png" alt="">
+                            <p>Dashboard</p>
+                        </div>
+                    </a>
+
+                    <a href="./appointment.html">
+                        <div class="option">
+                            <img src="../assets/images/book.png" alt="" class="active-tile">
+                            <p class="active-tile">Book Appointment</p>
+                        </div>
+                    </a>
+
+                    <a href="./archive.html">
+                        <div class="option">
+                            <img src="../assets/images/records.png" alt="">
+                            <p>Records</p>
+                        </div>
+                    </a>
+            
+                    <a href="./feedback.html">
+                        <div class="option">
+                            <img src="../assets/images/feed.png" alt="">
+                            <p>Your Feedbacks</p>
+                        </div>
+                    </a>
+                </div>
+        
+                <div class="sign-out">
+                    <img src="../assets/images/signout.png" alt="">
+                    <p>Sign Out</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="main">
+            <h2>Book Appointment</h2>
+            <br>
+
+            <button class="button" onclick="navigateToNextScreen()">
+                + BOOK
+            </button>
+
+            <div class="calendar">
+                <header>
+                    <button id="prev"></button>
+                    <h3></h3>
+                    <button id="next"></button>
+
+                </header>
+                <section>
+                    <ul class="days">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tues</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                    </ul>
+                    <ul class="dates"></ul>
+                </section>
+            </div>
+        </section>
+    </section>
+
+    <script src="../js/script.js">
+       
+    </script>
+    
+</body>
+</html>

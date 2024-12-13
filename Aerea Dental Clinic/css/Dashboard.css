@@ -1,0 +1,258 @@
+.dashboard-page{
+    display: flex;
+    color: black;
+    width: 100%;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: #EEF9FC;
+}
+
+
+.main{
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-board{
+    width: 70%;
+   
+}
+
+.main-board,
+.board {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;  
+}
+
+/* DRAWER */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+    height: 100vh;
+    background-color: white;
+}
+
+.active-tile {
+    filter: invert(50%) sepia(20%) saturate(691%) hue-rotate(117deg) brightness(96%) contrast(87%);
+}
+
+.drawer {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.sign-out {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #538D81;
+}
+
+.sidebar-options {
+    padding: 0 20px;
+    height: 40%;
+    justify-content: space-evenly;
+}
+
+.sign-out {
+    position: absolute;
+    bottom: 10px;
+}
+
+.option,
+.sign-out {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.option>img,
+.sign-out>img {
+    height: 40px;
+    width: 40px;
+}
+
+.option > p,
+.sign-out > p {
+    align-self: center;
+} 
+
+/* FOR ALL THE BOX */
+.container {
+    margin: auto;
+    width: 380px;
+    padding: 30px; 
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0 lightgrey;
+    background-color: white;
+}
+
+
+.main-content {
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0;
+    height: auto;
+    gap: 50px;
+}
+
+.main-content-title {
+    color: #2A5E4E;
+    font-weight: bold;
+}
+
+
+.notification-icon {
+    position: relative;
+}
+
+.notification-icon > img {
+    position: absolute;
+    right: 0;
+}
+
+.patient-name {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#patient-profile {
+    cursor: pointer;
+}
+
+h2 {
+    color: #2A5E4E;
+    font-size: 30px;
+}
+
+.sign-out{
+    color: #538D81;
+    text-align: center;
+}
+
+.appointment h4 {
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+    color: #318F7C;
+}
+
+.icon {
+    height: 32px;
+    width: 32px;
+    background-size: cover;
+}
+
+
+/* CALENDAR */
+
+.calendar header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.calendar ul li {
+    width: calc(100% / 7);
+    margin-top: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+#prev, #next {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer; 
+}
+
+#prev::before, #next::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    border-color: #ccc;
+    position: absolute;
+}
+#next::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#prev::before {
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+#prev:hover::before,
+#next:hover::before {
+    border-color: #000;
+}
+
+.days {
+    font-weight: 600;
+    color: #B5BEC6;
+}
+
+.dates li.today {
+    color: white;
+}
+
+.dates li.today::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #61B6A5;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.days li.inactive {
+    color: #ccc;
+}
+

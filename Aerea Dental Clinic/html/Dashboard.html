@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel = "icon" type = "image/png" href = "../assets/images/clinic_logo.png"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aerea Dental Clinic</title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<body>
+    <section>
+        <div class="dashboard-page">
+            <section>
+                <div class="sidebar">
+                    
+                    <div class="logo">
+                        <img src="../assets/images/clinic_logo.png" alt="">
+                    </div>
+    
+                    <div class="drawer">
+                        <a href="./dashboard.html">
+                            <div class="option">
+                                <img src="../assets/images/dash.png" alt="" class="active-tile">
+                                <p class="activeTile">Dashboard</p>
+                            </div>
+                        </a>
+                       
+    
+                        <a href="./appointment.html">
+                            <div class="option">
+                                <img src="../assets/images/book.png" alt="">
+                                <p>Book Appointment</p>
+                            </div>
+                        </a>
+    
+                        <a href="./archive.html">
+                            <div class="option">
+                                <img src="../assets/images/records.png" alt="">
+                                <p>Records</p>
+                            </div>
+                        </a>
+    
+                        <a href="./feedback.html">
+                            <div class="option">
+                                <img src="../assets/images/feed.png" alt="">
+                                <p>Your Feedbacks</p>
+                            </div>
+                        </a>
+                       
+                    </div>
+            
+                    <div class="sign-out">
+                        <img src="../assets/images/signout.png" alt="">
+                        <p>Sign Out</p>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="main">
+                <h2>Dashboard</h2>
+
+                <div class="notification-icon">
+                    <img src="../assets/images/notification.png" alt="">
+                </div>
+
+                <div class="main-container">
+                    <div class="main-board">
+                        <section class="main-content container">
+                            <p class="main-content-title">AEREA Dental Clinic</p>
+                            <p>Hello Aerea Dental Clinic Patients! Lorem ipsum dolor sit amet consectetur. Tortor cras nunc id mauris eros ultrices varius. Adipiscing eu a mauris donec pellentesque. Vitae et leo eget amet amet in gravida pulvinar. Ipsum eget lectus placerat in magna gravida. Odio magnis dictumst risus nullam convallis. Mauris faucibus ut turpis hendrerit. Tortor in sit commodo vestibulum. Ut arcu placerat viverra in viverra urna adipiscing ornare arcu. Mi imperdiet non pellentesque at sed.
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur. Tortor cras nunc id mauris eros ultrices varius. Adipiscing eu a mauris donec pellentesque. Vitae et leo eget amet amet in gravida pulvinar. Ipsum eget lectus placerat in magna gravida. Odio magnis dictumst risus nullam convallis. Mauris faucibus ut turpis hendrerit. Tortor in sit commodo vestibulum. Ut arcu placerat viverra in viverra urna adipiscing ornare arcu. Mi imperdiet non pellentesque at sed.
+                            </p>
+                        </section>
+                        
+                        <section class="main-content container">
+                            <p class="main-content-title">AEREA Dental Clinic</p>
+                            <p>Good Day, Patients! More available slots for dental services!</p>
+                        </section>
+        
+                        <section class="main-content container">
+                            <p class="main-content-title">AEREA Dental Clinic</p>
+                            <p>Hello, Patients. We would like to inform you that the clinic is closed for today due to the heavy storm. Stay safe everyone!</p>
+                        </section>
+                    </div>
+    
+                    <div class="board">
+                        <div class="patient-name container">
+                            <img src="../assets/images/patient_icon.png" class="icon" alt="">
+                            <p>Patient's name</p>
+                            <img src="../assets/images/edit.png" class="icon" alt="" id="patient-profile">
+                        </div>
+
+                        <div class="appointment container">
+                            <p>Upcoming Appointment</p>
+                            <h4>None</h4>
+                        </div>
+
+                        <div class="calendar container">
+                            <header>
+                                <button id="prev"></button>
+                                <h3></h3>
+                                <button id="next"></button>
+                            </header>
+                            <section>
+                                <ul class="days">
+                                    <li>Sun</li>
+                                    <li>Mon</li>
+                                    <li>Tues</li>
+                                    <li>Wed</li>
+                                    <li>Thu</li>
+                                    <li>Fri</li>
+                                    <li>Sat</li>
+                                </ul>
+                                <ul class="dates"></ul>
+                            </section>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div> 
+    </section>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

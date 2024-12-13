@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/patient_profile.css">
+    <title>Patient Profile</title>
+
+</head>
+<body>
+    <section>
+        <div class="header">
+            <h2>Profile</h2>
+            <img src="../assets/images/close.png" alt="" srcset="" onclick="backToDashboard()" id="close">
+        </div>
+        <br>
+        <h3>Manage your personal information here</h3>
+        <br>
+
+        <section class="main">
+            <section>
+                <div class="container" data-modal-target="#personal">
+                    <p>Personal Details</p>
+                </div>
+                <div class="modal" id="personal">
+                    <div class="container">
+                        <div class="header">
+                            <h3>Personal Details</h3>
+                        </div>
+                        <input type="text" name="" id="" class="textfield">
+                        <input type="text" name="" id="" class="textfield">
+                        <br>
+                        <br>
+                        <button >Save Changes</button>
+                    </div>
+                   
+                </div>
+            </section>
+            
+
+            <section>
+                <div class="container tap" data-modal-target="#pass" >
+                    <p>Change Password</p>
+                </div>
+               
+                <div class="modal" id="pass">
+                    <div class="container">
+                        <div class="header">
+                            <h3>Change Password</h3>
+                        </div>
+                        <br>
+                        <p>Your password must be at least 6 characters and should include a combination of numbers, letters and special characters (!$@%).</p>
+                        <input type="text" name="" id="" class="textfield" placeholder="Current Password">
+                        <input type="text" name="" id="" class="textfield" placeholder="New Password">
+                        <input type="text" name="" id="" class="textfield" placeholder="Re-enter Password">
+                        <br>
+                        <br>
+                        <button >Save Changes</button>
+                    </div>
+                </div>
+    
+            </section>
+
+            <section>
+                <div class="container tap" data-modal-target="#email" >
+                    <p>Account Settings</p>
+                </div>
+
+                <div class="modal" id="email">
+                    <div class="container">
+                        <div class="header">
+                            <h3>Change email</h3>
+                        </div>
+                        <br>
+                        <input type="text" name="" id="" class="textfield" placeholder="Change Email">
+                        <br>
+                        <br>
+                        <button >Save Changes</button>
+                    </div>
+                </div>
+            </section>
+           
+        </section>
+
+        <div id="overlay"></div>
+        
+    </section>
+    <script src="../js/pop-up.js"></script>
+    
+</body>
+</html>
